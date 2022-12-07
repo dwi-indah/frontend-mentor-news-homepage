@@ -1,0 +1,58 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+	padding: 0;
+}
+body {
+    font-family: $font_read;
+    font-size: 15px;
+    color: $cl_gray_darken;
+    background-color: #fff;
+    margin: 0;
+	padding: 0;
+    overflow-x: hidden;
+	position: relative;
+	line-height: 24px;
+	font-weight: 400;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	vertical-align: baseline;
+	outline:0;
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	vertical-align: top;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+main {
+	position: relative;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 5vw;
+	@media (min-width: 992px) {
+		padding: 0;
+		max-width: 1090px;
+	}
+	@media (min-width: 1400px) {
+		max-width: 1140px;
+	}
+}
